@@ -205,16 +205,16 @@
     <a href="#solution" class="header-mark" aria-label="Header mark for 'Solution'"></a>Solution</h2><h3 id="1pcap-busterz-1-forensics" class="headerLink">
     <a href="#1pcap-busterz-1-forensics" class="header-mark" aria-label="Header mark for '1.pcap-busterz-1 (Forensics)'"></a>1.pcap-busterz-1 (Forensics)</h3><ul>
 <li>Challenge:
-<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1.png"  sizes="auto" alt="Smile"  ></figure>
+<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/pcap-busterz-1.png"  sizes="auto" alt="Smile"  ></figure>
 </li>
 <li>After download file and try to strings, i saw somethings like this :
-<figure><img  loading="lazy" src="/PearlCTF/image3.png"  sizes="auto" alt="Smile"  ></figure>
+<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image3.png"  sizes="auto" alt="Smile"  ></figure>
 </li>
 <li>Use <code>wireshark</code> and check : <code>Statistics -&gt; Endpoint -&gt; IP V4</code>, i see huge number packet in IP : <code>172.31.122.157</code> .
-<figure><img  loading="lazy" src="/PearlCTF/image.png"  sizes="auto" alt="Smile"  ></figure>
+<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image.png"  sizes="auto" alt="Smile"  ></figure>
 </li>
 <li>After that, i filter stream by type : <code>ip.addr == 172.31.122.157</code>. Follow it, we see like this :
-<figure><img  loading="lazy" src="/PearlCTF/image4.png"  sizes="auto" alt="Smile"  ></figure>
+<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image4.png"  sizes="auto" alt="Smile"  ></figure>
 </li>
 <li>Extract it,we will have a file with form : <code>x = ?, y = ?, color = ?</code>. I used this code below to decode them (with my friend GPT haha) :</li>
 </ul>
@@ -373,21 +373,7 @@
 <h2 id="conclusion" class="headerLink">
     <a href="#conclusion" class="header-mark" aria-label="Header mark for 'Conclusion'"></a>Conclusion</h2><p><b>If you have any feedback, please help me become better by DM me.Thanks.</b></p></div>
 
-        
-
-
-<h2>Related Content</h2>
-<div class="related-container">
-    <div class="related-item-container">
-            <h2 class="related-title">
-                <a href="/2024-03-11-shakti-ctf/">Writeup for Osint/Ocean_Enigma - ShaktiCTF 2024</a>
-            </h2>
-        </div>
-    
-
-</div>
-
-<div class="post-footer" id="post-footer">
+        <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

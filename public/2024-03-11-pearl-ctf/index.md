@@ -11,13 +11,13 @@ Solution for PearlCTF 2024 challenges.
 
 ### 1.pcap-busterz-1 (Forensics)
 - Challenge: 
-    ![Smile](/PearlCTF/pcap-busterz-1.png)
+    ![Smile](/PearlCTF/pcap-busterz-1/pcap-busterz-1.png)
 - After download file and try to strings, i saw somethings like this : 
-    ![Smile](/PearlCTF/image3.png)
+    ![Smile](/PearlCTF/pcap-busterz-1/image3.png)
 - Use ```wireshark``` and check : ```Statistics -> Endpoint -> IP V4```, i see huge number packet in IP : ```172.31.122.157``` . 
-    ![Smile](/PearlCTF/image.png)
+    ![Smile](/PearlCTF/pcap-busterz-1/image.png)
 - After that, i filter stream by type : ```ip.addr == 172.31.122.157```. Follow it, we see like this : 
-    ![Smile](/PearlCTF/image4.png)
+    ![Smile](/PearlCTF/pcap-busterz-1/image4.png)
 - Extract it,we will have a file with form : ``` x = ?, y = ?, color = ? ```. I used this code below to decode them (with my friend GPT haha) :
 
 ```python

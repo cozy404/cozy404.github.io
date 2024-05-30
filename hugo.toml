@@ -571,7 +571,7 @@ theme = "DoIt"
         logoUrl = ""
     #  Related content config
       [params.page.related]
-        enable = true
+        enable = false
         count = 5
 
 
