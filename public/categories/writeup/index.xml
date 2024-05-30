@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Writeup - Category - 404 not found</title>
+        <link>http://localhost:1313/categories/writeup/</link>
+        <description>Writeup - Category - 404 not found</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 25 Mar 2024 17:31:00 &#43;0700</lastBuildDate><atom:link href="http://localhost:1313/categories/writeup/" rel="self" type="application/rss+xml" /><item>
+    <title>Writeup for TexsawCTF 2024</title>
+    <link>http://localhost:1313/2024-03-25-texsaw-ctf/</link>
+    <pubDate>Mon, 25 Mar 2024 17:31:00 &#43;0700</pubDate><author>
+        <name>h4sh1334r</name>
+    </author><guid>http://localhost:1313/2024-03-25-texsaw-ctf/</guid>
+    <description><![CDATA[Writeup for TexsawCTF 2024 challenges]]></description>
+</item><item>
+    <title>Writeup for Osint/Ocean_Enigma - ShaktiCTF 2024</title>
+    <link>http://localhost:1313/2024-03-11-shakti-ctf/</link>
+    <pubDate>Mon, 11 Mar 2024 22:50:00 &#43;0700</pubDate><author>
+        <name>h4sh1334r</name>
+    </author><guid>http://localhost:1313/2024-03-11-shakti-ctf/</guid>
+    <description><![CDATA[Writeup for Osint/Ocean_Enigma - ShaktiCTF 2024]]></description>
+</item><item>
+    <title>PearlCTF 2024</title>
+    <link>http://localhost:1313/2024-03-11-pearl-ctf/</link>
+    <pubDate>Mon, 11 Mar 2024 16:42:00 &#43;0700</pubDate><author>
+        <name>h4sh1334r</name>
+    </author><guid>http://localhost:1313/2024-03-11-pearl-ctf/</guid>
+    <description><![CDATA[<p>Solution for PearlCTF 2024 challenges.</p>]]></description>
+</item></channel>
+</rss>
