@@ -113,9 +113,9 @@ theme = "DoIt"
     #  Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = ""
+      logo = "/Avatar/OIG3.jpeg"
       # title name
-      name = ""
+      name = "404/Home"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -180,7 +180,7 @@ theme = "DoIt"
       # URL of avatar shown in home page
       # Place your avatar file under static or assets directory
       # The filepath is relative to the static or assets directory
-      avatarURL = "/images/avatar.webp"
+      avatarURL = "/Avatar/OIG3.jpeg"
       # URL the avatar links to
       avatarLinkURL = ""
       #  title shown in home page (HTML format is supported)
@@ -206,10 +206,10 @@ theme = "DoIt"
   [params.social]
     GitHub = "xxxx"
     Linkedin = ""
-    Twitter = "xxxx"
-    Instagram = "xxxx"
-    Facebook = "xxxx"
-    Telegram = "xxxx"
+    Twitter = "/my_name_is_cozy"
+    Instagram = ""
+    Facebook = ""
+    Telegram = ""
     Medium = ""
     Gitlab = ""
     Youtubelegacy = ""
@@ -308,9 +308,9 @@ theme = "DoIt"
     #  whether to enable series navigation
     seriesNavigation = true
     # whether to enable last modified time
-    enableLastMod = true
+    enableLastMod = false
     # whether to enable word count
-    enableWordCount = true
+    enableWordCount = false
     # whether to enable reading time estimation
     enableReadingTime = true
     #  outdated article reminder config
@@ -369,11 +369,11 @@ theme = "DoIt"
       fullscreen = true
     #  social share links in post page
     [params.page.share]
-      enable = true
-      Twitter = true
-      Facebook = true
+      enable = false
+      Twitter = false
+      Facebook = false
       Linkedin = false
-      Whatsapp = true
+      Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
@@ -381,19 +381,19 @@ theme = "DoIt"
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false  
       Instapaper = false
       Pocket = false
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
-      Myspace = true
-      Blogger = true
+      Myspace = false
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = true
+      Evernote = false
       Skype = false
       Trello = false
       Mix = false
