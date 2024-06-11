@@ -86,7 +86,7 @@
     <div id="mask"></div><div class="wrapper"><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"    height="36" width="36">404/Home</a>
+            <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item"
@@ -123,7 +123,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"     >404/Home</a>
+                <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -202,8 +202,7 @@
     <a href="#1flag-extraction" class="header-mark" aria-label="Header mark for '1.Flag Extraction'"></a>1.Flag Extraction</h2><ul>
 <li><a href="/https://ctf.intigriti.io/challenges#Over%20the%20Wire%20%28part%201%29-42/" rel="">Challenge link</a></li>
 </ul>
-<p><figure><img  loading="lazy" src="/1337/FlagExtraction/gif.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/1337/FlagExtraction/gif.png"  sizes="auto" alt="Smile"  ></p>
 <ul>
 <li>
 <p>Downloading the challenge, I get 1 rar file, then 1 string of tar files, I guess I extract 1 continuous sequence of file types. Use 7zip or whatever you can. At the end we get 1 gif file.</p>
@@ -227,19 +226,16 @@
 <p>Quickly follow that stream and I see some important information.</p>
 </li>
 </ul>
-<p><figure><img  loading="lazy" src="/1337/OverTheWire1/1.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/1337/OverTheWire1/1.png"  sizes="auto" alt="Smile"  ></p>
 <ul>
 <li>
 <p>I was going to try File -&gt; Export Objects, but there doesn&rsquo;t seem to be anything in it. The only usable thing here is the password I found above. Then I tried : strings name-file.pcap | grep &ldquo;flag&rdquo; and getting 2 line seems to be a clue
 .</p>
-<p><figure><img  loading="lazy" src="/1337/OverTheWire1/2.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/1337/OverTheWire1/2.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>The first is &ldquo;flag.txt&rdquo;. I used the binwalk with the pcap file and actually got 1 zip file. &ldquo;Foremost&rdquo; file pcap to receive the zip file, but it requires a key.I tried using the original password I found to open but failed. With the line &ldquo;This flag is really important so I had to encrypt it in case it falls into the wrong hands&rdquo; I reopen the wireshark and check which stream it belongs to. I got 1 message :</p>
-<p><figure><img  loading="lazy" src="/1337/OverTheWire1/3.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/1337/OverTheWire1/3.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>I thought for a while and tried changing 2022 in the password to 2023 and got the flag :</p>
@@ -254,8 +250,7 @@
 </li>
 <li>
 <p>Another pcap challenge. I did the same as season 1 but got nothing. I tried again with File -&gt; Export Objects. This time in the IMF section I see 4 .eml files. Try saving them all and viewing each file 1 (remember to save the file with the eml extension for easier reading). The first 2 files are nothing, just normal messages. 2 files after each file have 1 photo. I tried to download each photo and used the Stegano tools to see if I got anything. And in the 2nd image, I used the &ldquo;binwalk&rdquo; to check and saw that there was a zlib file . Using &ldquo;zsteg&rdquo; to check, we get the flag:</p>
-<p><figure><img  loading="lazy" src="/1337/OverTheWire2/1.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/1337/OverTheWire2/1.png"  sizes="auto" alt="Smile"  ></p>
 <p>-&gt; <em>INTIGRITI{H1dd3n_Crypt0Cat_Purr}</em></p>
 </li>
 </ul>
@@ -263,8 +258,7 @@
 <h2 id="4-zechat-misc" class="headerLink">
     <a href="#4-zechat-misc" class="header-mark" aria-label="Header mark for '4. ZeChat (Misc)'"></a>4. ZeChat (Misc)</h2><ul>
 <li>
-<p><figure><img  loading="lazy" src="/1337/ZeChat/zechat.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/1337/ZeChat/zechat.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>This was honestly one of the hardest challenges I&rsquo;ve ever done. Only 7 teams solved this challenge, not including my team. I spent up to 8 hours solving this challenge by hand, including reading the article. You can read <a href="https://hackmd.io/@Chivato/SkN3Piyan" target="_blank" rel="noopener noreferrer">Chivato&rsquo;s article</a> to solve this problem.

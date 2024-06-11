@@ -86,7 +86,7 @@
     <div id="mask"></div><div class="wrapper"><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"    height="36" width="36">404/Home</a>
+            <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item"
@@ -123,7 +123,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"     >404/Home</a>
+                <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -198,26 +198,22 @@
     <a href="#10x0" class="header-mark" aria-label="Header mark for '1.0x0'"></a>1.0x0</h3><ul>
 <li>
 <p>Download and open the initial file, which is a regular image named &ldquo;legit.png&rdquo;.</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/legit.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/legit.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>I tried using binwalk to check, and it seems there are some hidden files within it:</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/image.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/image.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>Attempted to use binwalk and foremost to extract, but it seems unfeasible. I used zsteg:</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/offset.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/offset.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>Spent quite some time here trying to find a way to extract that data. After a while, I found a way using the &lsquo;dd&rsquo; command. I used the following command to extract the data: <code>dd if=legit.png bs=1 skip=$((0x96ef4)) of=out</code>.</p>
 </li>
 <li>
 <p>Upon extraction, I noticed it was a PNG file. I removed the excess parts at the beginning, but it didn&rsquo;t open correctly. Used: <code>pngcheck -vv out</code>.</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/pngcheck.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/pngcheck.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>Got a 0x0 error. I searched for this error online and found a post by requroku / POCKekers, solving the CTF Killer Queen 2021. It seems the height and width of the image were changed to zero. Used the following Python code to find the correct height and width:</p>
@@ -333,23 +329,19 @@
 </li>
 </ul>
 <p>and we found:</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/value.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/value.png"  sizes="auto" alt="Smile"  ></p>
 <ul>
 <li>
 <p>Convert the values to hex and fix:</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/changehex.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/changehex.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>Open the image again:</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/donepng.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/donepng.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>Following the post mentioned earlier, I thought the next step was to use the stegsolve tool. Used it to check different color planes, and in the blue plane 1, we see:</p>
-<p><figure><img  loading="lazy" src="/Cookie-Arena/flag.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/Cookie-Arena/flag.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>Scanned the QR code and received the flag:<br>

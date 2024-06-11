@@ -86,7 +86,7 @@
     <div id="mask"></div><div class="wrapper"><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"    height="36" width="36">404/Home</a>
+            <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item"
@@ -123,7 +123,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"     >404/Home</a>
+                <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -206,17 +206,13 @@
     <a href="#solution" class="header-mark" aria-label="Header mark for 'Solution'"></a>Solution</h2><h3 id="1pcap-busterz-1-forensics" class="headerLink">
     <a href="#1pcap-busterz-1-forensics" class="header-mark" aria-label="Header mark for '1.pcap-busterz-1 (Forensics)'"></a>1.pcap-busterz-1 (Forensics)</h3><ul>
 <li>Challenge:
-<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/pcap-busterz-1.png"  sizes="auto" alt="Smile"  ></figure>
-</li>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/pcap-busterz-1/pcap-busterz-1.png"  sizes="auto" alt="Smile"  ></li>
 <li>After download file and try to strings, i saw somethings like this :
-<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image3.png"  sizes="auto" alt="Smile"  ></figure>
-</li>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/pcap-busterz-1/image3.png"  sizes="auto" alt="Smile"  ></li>
 <li>Use <code>wireshark</code> and check : <code>Statistics -&gt; Endpoint -&gt; IP V4</code>, i see huge number packet in IP : <code>172.31.122.157</code> .
-<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image.png"  sizes="auto" alt="Smile"  ></figure>
-</li>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/pcap-busterz-1/image.png"  sizes="auto" alt="Smile"  ></li>
 <li>After that, i filter stream by type : <code>ip.addr == 172.31.122.157</code>. Follow it, we see like this :
-<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image4.png"  sizes="auto" alt="Smile"  ></figure>
-</li>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/pcap-busterz-1/image4.png"  sizes="auto" alt="Smile"  ></li>
 <li>Extract it,we will have a file with form : <code>x = ?, y = ?, color = ?</code>. I used this code below to decode them (with my friend GPT haha) :</li>
 </ul>
 <div class="code-block highlight is-closed show-line-numbers  tw-group tw-my-2">
@@ -345,26 +341,22 @@
 </div>
 <ul>
 <li>And we have this, scan and get the flag :
-<figure><img  loading="lazy" src="/PearlCTF/pcap-busterz-1/image2.png"  sizes="auto" alt="Smile"  ></figure>
-
+<img class="tw-inline" loading="lazy" src="/PearlCTF/pcap-busterz-1/image2.png"  sizes="auto" alt="Smile"  >
 -&gt; flag : <b><em>pearl{QR_rev0lution1ses_mod3rn_data_handl1ng}</em></b></li>
 </ul>
 <h3 id="2lost-letter-osint" class="headerLink">
     <a href="#2lost-letter-osint" class="header-mark" aria-label="Header mark for '2.Lost Letter (Osint)'"></a>2.Lost Letter (Osint)</h3><ul>
 <li>
 <p>Challenge :
-<figure><img  loading="lazy" src="/PearlCTF/lost-letter/Lost-letter.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/lost-letter/Lost-letter.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>We have this image:
-<figure><img  loading="lazy" src="/PearlCTF/lost-letter/letter2.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/lost-letter/letter2.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>I didn&rsquo;t do the previous challenge of this challenge so I asked the boss and he said he couldn&rsquo;t find anything for this challenge. I used Tineye and removed some parts of the photo. I paid attention to two parts: &ldquo;PIN code - 5x5x2x&rdquo; and the hidden address consisting of two letters &ldquo;J and T&rdquo;. I searched GG : <code>indian post office code</code> and found <a href="https://data.gov.in/catalog/all-india-pincode-directory" target="_blank" rel="noopener noreferrer">this website</a> .In file CSV, I noticed that only the <code>Telangana</code> region have <code>5x5x</code> format, so the last part of the flag would be <code>Telangana</code>. Continue following the letter J. I see that both the PIN code <code>5x5x2x</code> and the letter J match <code>Jagtial</code>.
-<figure><img  loading="lazy" src="/PearlCTF/lost-letter/image2.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<img class="tw-inline" loading="lazy" src="/PearlCTF/lost-letter/image2.png"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>So i get the first part of the flag, try submit and it work.</p>

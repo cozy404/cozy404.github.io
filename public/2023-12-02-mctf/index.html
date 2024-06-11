@@ -86,7 +86,7 @@
     <div id="mask"></div><div class="wrapper"><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"    height="36" width="36">404/Home</a>
+            <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item"
@@ -123,7 +123,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="404 not found"><img class="logo"  src="/Avatar/OIG3.jpeg"     >404/Home</a>
+                <a href="/" title="404 not found"><img class="tw-inline tw-align-text-bottom tw-mr-1"  src="/Avatar/OIG3.jpeg"    height="28" width="28">404/Home</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -204,8 +204,7 @@
 <h2 id="1-rounds-meme" class="headerLink">
     <a href="#1-rounds-meme" class="header-mark" aria-label="Header mark for '1. Rounds-meme'"></a>1. Rounds-meme</h2><ul>
 <li>PNG:
-<figure><img  loading="lazy" src="/M*CTF/Rounds-meme/colorblind.png"  sizes="auto" alt="Smile"  ></figure>
-</li>
+<img class="tw-inline" loading="lazy" src="/M*CTF/Rounds-meme/colorblind.png"  sizes="auto" alt="Smile"  ></li>
 <li>The challenge consists of 6 boxes of different colors, as usual I used <code>strings</code> and <code>binwalk</code> but nothing. Color ? I suddenly thought of stegsolve which can adjust color. Use <code>java -jar stegsolve</code> and change different colors, you will see each part of the flag (not good for people with poor eyesight lol). Their order is similar to the existing numbers:</li>
 </ul>
 <p>-&gt; flag: <em>mtcf{h31lO_c0loRB11nD_P3op1e}</em>
@@ -214,13 +213,11 @@
     <a href="#2two-twins" class="header-mark" aria-label="Header mark for '2.Two-Twins'"></a>2.Two-Twins</h2><ul>
 <li>
 <p>Image :
-<figure><img  loading="lazy" src="/M*CTF/Twins/twins.jpg"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<img class="tw-inline" loading="lazy" src="/M*CTF/Twins/twins.jpg"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>The photo of the challenge looks quite normal like any other Stegano challenge. Tried with binwalk, strings + grep, stegsolve&hellip; to no avail. Trying with steghide, it produces another image file.</p>
-<p><figure><img  loading="lazy" src="/M*CTF/Twins/flag"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/M*CTF/Twins/flag"  sizes="auto" alt="Smile"  ></p>
 </li>
 <li>
 <p>When I opened it, I realized it was Braille (I once did a similar challenge on BuuOJ). Decode the characters in the image and we get the flag:</p>
@@ -243,8 +240,7 @@
 <ul>
 <li>Hmm, it seems very normal. Tried using google or edge to search about it, but to no avail. I thought of Russia and this was their prize, so I tried Yandex, and after a while I found the original text. I saw that there were some differences between the two documents, so I checked the length of the two paragraphs and they were indeed different. Use the <a href="https://www.diffchecker.com/text-compare/" target="_blank" rel="noopener noreferrer">check diff tool</a>. I get other characters.</li>
 </ul>
-<p><figure><img  loading="lazy" src="/M*CTF/Good-Friend/diff.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<p><img class="tw-inline" loading="lazy" src="/M*CTF/Good-Friend/diff.png"  sizes="auto" alt="Smile"  ></p>
 <ul>
 <li>
 <p>Try inserting <code>_</code> between words and putting it into flag formatting :</p>
@@ -266,8 +262,7 @@
 <li>
 <p>I receive a string of characters: <code>zaq1w3edc vfr45665432 5tgbnju7 76tgvbn 7898ik,.,m</code> . Try asking Bing and it answers that it is a string on the keyboard that can be connected. I tried concatenating the given string and got the following flag:
 <br><br>
-<figure><img  loading="lazy" src="/M*CTF/Liko-klava/kova.png"  sizes="auto" alt="Smile"  ></figure>
-</p>
+<img class="tw-inline" loading="lazy" src="/M*CTF/Liko-klava/kova.png"  sizes="auto" alt="Smile"  ></p>
 <p>-&gt; flag : <em>MCTF{MTUCI}</em></p>
 </li>
 </ul></div>
