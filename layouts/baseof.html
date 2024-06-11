@@ -13,7 +13,9 @@
     {{- /* see more https://discourse.gohugo.io/t/control-pagination-and-page-collections-from-baseof-html/37643/8 */ -}}
     {{- /* see more https://discourse.gohugo.io/t/determine-if-current-page-is-result-of-pagination/37494/4 */ -}}
     {{- partial "head/paginator.html" . -}}
-    {{ partialCached "analytics.html" . }}
+    {{- if .Site.Params.goatcounter }}
+      {{ partial "analytics.html" . -}}
+    {{- end}}
     <title>
         {{- block "title" . }}{{ .Site.Title }}{{ end -}}
     </title>
