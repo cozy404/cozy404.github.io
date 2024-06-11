@@ -204,9 +204,9 @@ theme = "DoIt"
 
   # Social config about the author
   [params.social]
-    GitHub = "xxxx"
+    GitHub = "/cozy404"
     Linkedin = ""
-    Twitter = "/my_name_is_cozy"
+    Twitter = "my_name_is_cozy"
     Instagram = ""
     Facebook = ""
     Telegram = ""
@@ -274,7 +274,7 @@ theme = "DoIt"
     QQ = ""
     QQGroup = ""
     Email = "xxxx@xxxx.com"
-    RSS = true # 
+    RSS = false # 
 
   #  Page config
   [params.page]
