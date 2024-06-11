@@ -11,13 +11,6 @@
     </author><guid>http://localhost:1313/2024-03-25-texsaw-ctf/</guid>
     <description><![CDATA[Writeup for TexsawCTF 2024 challenges]]></description>
 </item><item>
-    <title>Writeup for TexsawCTF 2024</title>
-    <link>http://localhost:1313/2024-06-11-checkadd/</link>
-    <pubDate>Mon, 25 Mar 2024 17:31:00 &#43;0700</pubDate><author>
-        <name>h4sh1334r</name>
-    </author><guid>http://localhost:1313/2024-06-11-checkadd/</guid>
-    <description><![CDATA[Writeup for TexsawCTF 2024 challenges]]></description>
-</item><item>
     <title>Writeup for Osint/Ocean_Enigma - ShaktiCTF 2024</title>
     <link>http://localhost:1313/2024-03-11-shakti-ctf/</link>
     <pubDate>Mon, 11 Mar 2024 22:50:00 &#43;0700</pubDate><author>
@@ -73,5 +66,12 @@
         <name>Bear4Ts1ck</name>
     </author><guid>http://localhost:1313/2023-11-19-1337-ctf/</guid>
     <description><![CDATA[<p>Some write-up for 1337CTF tournement.</p>]]></description>
+</item><item>
+    <title>EyesOpen CTF WriteUp</title>
+    <link>http://localhost:1313/2023-11-27-eyesopen-ctf/</link>
+    <pubDate>Sun, 19 Nov 2023 02:16:50 &#43;0700</pubDate><author>
+        <name>Bear4Ts1ck</name>
+    </author><guid>http://localhost:1313/2023-11-27-eyesopen-ctf/</guid>
+    <description><![CDATA[<p>Some write-up for EyesOpen CTF tournement.</p>]]></description>
 </item></channel>
 </rss>
